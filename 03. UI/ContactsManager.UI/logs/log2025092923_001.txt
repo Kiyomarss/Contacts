@@ -1,0 +1,52 @@
+2025-09-29 23:20:38.097 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-29 23:20:38.120 +03:30 [INF] Hosting environment: Development
+2025-09-29 23:20:38.177 +03:30 [INF] Content root path: C:\Users\pasyar\Documents\harsha\AspNetCore-Harsha-main\23. Clean Architecture\03. UI\ContactsManager.UI\
+2025-09-29 23:51:59.580 +03:30 [INF] User profile is available. Using 'C:\Users\pasyar\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-09-29 23:51:59.990 +03:30 [INF] Now listening on: http://localhost:5153
+2025-09-29 23:52:03.438 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5153/ - -
+2025-09-29 23:52:03.459 +03:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /
+2025-09-29 23:52:03.559 +03:30 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Index (ContactsManager.UI)'
+2025-09-29 23:52:03.714 +03:30 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderOptions) on controller CRUDExample.Controllers.PersonsController (ContactsManager.UI).
+2025-09-29 23:52:04.337 +03:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-29 23:52:04.338 +03:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-29 23:52:04.339 +03:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-29 23:52:04.342 +03:30 [INF] PersonsListActionFilter.OnActionExecuting method
+2025-09-29 23:52:04.359 +03:30 [INF] Executing action method CRUDExample.Controllers.PersonsController.Index (ContactsManager.UI) - Validation state: "Invalid"
+2025-09-29 23:52:04.371 +03:30 [INF] Index action method of PersonsController
+2025-09-29 23:52:04.382 +03:30 [INF] GetFilteredPersons of PersonsService
+2025-09-29 23:52:04.391 +03:30 [INF] GetAllPersons of PersonsRepository
+2025-09-29 23:52:06.137 +03:30 [INF] Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+2025-09-29 23:52:07.124 +03:30 [INF] Executed DbCommand (51ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2025-09-29 23:52:07.301 +03:30 [INF] Time for Filtered Persons from Database completed in 2914.3 ms
+2025-09-29 23:52:07.348 +03:30 [INF] GetSortedPersons of PersonsService
+2025-09-29 23:52:07.368 +03:30 [INF] Executed action method CRUDExample.Controllers.PersonsController.Index (ContactsManager.UI), returned result Microsoft.AspNetCore.Mvc.ViewResult in 2990.7807ms.
+2025-09-29 23:52:07.402 +03:30 [INF] PersonsListActionFilter.OnActionExecuted method
+2025-09-29 23:52:07.514 +03:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-29 23:52:07.517 +03:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-29 23:52:07.518 +03:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-29 23:52:07.531 +03:30 [INF] PersonsListResultFilter.OnResultExecutionAsync - before
+2025-09-29 23:52:07.575 +03:30 [INF] Executing ViewResult, running view Index.
+2025-09-29 23:52:08.240 +03:30 [INF] Executed ViewResult - view Index executed in 654.786ms.
+2025-09-29 23:52:08.506 +03:30 [INF] PersonsListResultFilter.OnResultExecutionAsync - after
+2025-09-29 23:52:08.519 +03:30 [INF] Executed action CRUDExample.Controllers.PersonsController.Index (ContactsManager.UI) in 4801.3365ms
+2025-09-29 23:52:08.525 +03:30 [INF] Executed endpoint 'CRUDExample.Controllers.PersonsController.Index (ContactsManager.UI)'
+2025-09-29 23:52:08.546 +03:30 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Mon, 29 Sep 2025 20:22:07 GMT
+Server: Kestrel
+Last-Modified: 2025-09-29 23:52
+Transfer-Encoding: chunked
+My-Key-From-Global: [Redacted]
+MyKey-FromAction: [Redacted]
+My-Key-From-Controller: [Redacted]
+2025-09-29 23:52:08.555 +03:30 [INF] HTTP GET / responded 200 in 5101.4093 ms
+2025-09-29 23:52:08.593 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5153/ - - - 200 - text/html;+charset=utf-8 5159.2652ms

@@ -1,0 +1,36 @@
+C:\Users\pasyar\Documents\harsha\AspNetCore-Harsha-main\23. Clean Architecture\03. UI\ContactsManager.Core\bin\Debug\net6.0\ContactsManager.Core.deps.json
+C:\Users\pasyar\Documents\harsha\AspNetCore-Harsha-main\23. Clean Architecture\03. UI\ContactsManager.Core\bin\Debug\net6.0\ContactsManager.Core.dll
+C:\Users\pasyar\Documents\harsha\AspNetCore-Harsha-main\23. Clean Architecture\03. UI\ContactsManager.Core\bin\Debug\net6.0\ContactsManager.Core.pdb
+C:\Users\pasyar\Documents\harsha\AspNetCore-Harsha-main\23. Clean Architecture\03. UI\ContactsManager.Core\obj\Debug\net6.0\ContactsManager.Core.csproj.AssemblyReference.cache
+C:\Users\pasyar\Documents\harsha\AspNetCore-Harsha-main\23. Clean Architecture\03. UI\ContactsManager.Core\obj\Debug\net6.0\ContactsManager.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pasyar\Documents\harsha\AspNetCore-Harsha-main\23. Clean Architecture\03. UI\ContactsManager.Core\obj\Debug\net6.0\ContactsManager.Core.AssemblyInfoInputs.cache
+C:\Users\pasyar\Documents\harsha\AspNetCore-Harsha-main\23. Clean Architecture\03. UI\ContactsManager.Core\obj\Debug\net6.0\ContactsManager.Core.AssemblyInfo.cs
+C:\Users\pasyar\Documents\harsha\AspNetCore-Harsha-main\23. Clean Architecture\03. UI\ContactsManager.Core\obj\Debug\net6.0\ContactsManager.Core.csproj.CoreCompileInputs.cache
+C:\Users\pasyar\Documents\harsha\AspNetCore-Harsha-main\23. Clean Architecture\03. UI\ContactsManager.Core\obj\Debug\net6.0\ContactsManager.Core.dll
+C:\Users\pasyar\Documents\harsha\AspNetCore-Harsha-main\23. Clean Architecture\03. UI\ContactsManager.Core\obj\Debug\net6.0\refint\ContactsManager.Core.dll
+C:\Users\pasyar\Documents\harsha\AspNetCore-Harsha-main\23. Clean Architecture\03. UI\ContactsManager.Core\obj\Debug\net6.0\ContactsManager.Core.pdb
+C:\Users\pasyar\Documents\harsha\AspNetCore-Harsha-main\23. Clean Architecture\03. UI\ContactsManager.Core\obj\Debug\net6.0\ref\ContactsManager.Core.dll
+D:\Harsha\23. Clean Architecture\03. UI\ContactsManager.Core\bin\Debug\net6.0\ContactsManager.Core.deps.json
+D:\Harsha\23. Clean Architecture\03. UI\ContactsManager.Core\bin\Debug\net6.0\ContactsManager.Core.dll
+D:\Harsha\23. Clean Architecture\03. UI\ContactsManager.Core\bin\Debug\net6.0\ContactsManager.Core.pdb
+D:\Harsha\23. Clean Architecture\03. UI\ContactsManager.Core\obj\Debug\net6.0\ContactsManager.Core.csproj.AssemblyReference.cache
+D:\Harsha\23. Clean Architecture\03. UI\ContactsManager.Core\obj\Debug\net6.0\ContactsManager.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Harsha\23. Clean Architecture\03. UI\ContactsManager.Core\obj\Debug\net6.0\ContactsManager.Core.AssemblyInfoInputs.cache
+D:\Harsha\23. Clean Architecture\03. UI\ContactsManager.Core\obj\Debug\net6.0\ContactsManager.Core.AssemblyInfo.cs
+D:\Harsha\23. Clean Architecture\03. UI\ContactsManager.Core\obj\Debug\net6.0\ContactsManager.Core.csproj.CoreCompileInputs.cache
+D:\Harsha\23. Clean Architecture\03. UI\ContactsManager.Core\obj\Debug\net6.0\ContactsManager.Core.dll
+D:\Harsha\23. Clean Architecture\03. UI\ContactsManager.Core\obj\Debug\net6.0\refint\ContactsManager.Core.dll
+D:\Harsha\23. Clean Architecture\03. UI\ContactsManager.Core\obj\Debug\net6.0\ContactsManager.Core.pdb
+D:\Harsha\23. Clean Architecture\03. UI\ContactsManager.Core\obj\Debug\net6.0\ref\ContactsManager.Core.dll
+D:\Harsha\Contacts\03. UI\ContactsManager.Core\bin\Debug\net6.0\ContactsManager.Core.deps.json
+D:\Harsha\Contacts\03. UI\ContactsManager.Core\bin\Debug\net6.0\ContactsManager.Core.dll
+D:\Harsha\Contacts\03. UI\ContactsManager.Core\bin\Debug\net6.0\ContactsManager.Core.pdb
+D:\Harsha\Contacts\03. UI\ContactsManager.Core\obj\Debug\net6.0\ContactsManager.Core.csproj.AssemblyReference.cache
+D:\Harsha\Contacts\03. UI\ContactsManager.Core\obj\Debug\net6.0\ContactsManager.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Harsha\Contacts\03. UI\ContactsManager.Core\obj\Debug\net6.0\ContactsManager.Core.AssemblyInfoInputs.cache
+D:\Harsha\Contacts\03. UI\ContactsManager.Core\obj\Debug\net6.0\ContactsManager.Core.AssemblyInfo.cs
+D:\Harsha\Contacts\03. UI\ContactsManager.Core\obj\Debug\net6.0\ContactsManager.Core.csproj.CoreCompileInputs.cache
+D:\Harsha\Contacts\03. UI\ContactsManager.Core\obj\Debug\net6.0\ContactsManager.Core.dll
+D:\Harsha\Contacts\03. UI\ContactsManager.Core\obj\Debug\net6.0\refint\ContactsManager.Core.dll
+D:\Harsha\Contacts\03. UI\ContactsManager.Core\obj\Debug\net6.0\ContactsManager.Core.pdb
+D:\Harsha\Contacts\03. UI\ContactsManager.Core\obj\Debug\net6.0\ref\ContactsManager.Core.dll
