@@ -1,0 +1,3 @@
+2025-09-30 20:03:07.570 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-30 20:03:07.580 +03:30 [INF] Hosting environment: Development
+2025-09-30 20:03:07.591 +03:30 [INF] Content root path: D:\Harsha\Contacts\03. UI\ContactsManager.UI\
