@@ -1,18 +1,7 @@
-﻿using System;
-using Entities;
+﻿using Entities;
 using ServiceContracts.DTO;
 using ServiceContracts;
-using Services.Helpers;
-using ServiceContracts.Enums;
-using CsvHelper;
-using System.Globalization;
-using System.IO;
-using CsvHelper.Configuration;
-using OfficeOpenXml;
 using RepositoryContracts;
-using Microsoft.Extensions.Logging;
-using Serilog;
-using SerilogTimings;
 using Exceptions;
 
 namespace Services
@@ -21,15 +10,11 @@ namespace Services
  {
   //private field
   private readonly IPersonsRepository _personsRepository;
-  private readonly ILogger<PersonsGetterService> _logger;
-  private readonly IDiagnosticContext _diagnosticContext;
 
   //constructor
-  public PersonsUpdaterService(IPersonsRepository personsRepository, ILogger<PersonsGetterService> logger, IDiagnosticContext diagnosticContext)
+  public PersonsUpdaterService(IPersonsRepository personsRepository)
   {
    _personsRepository = personsRepository;
-   _logger = logger;
-   _diagnosticContext = diagnosticContext;
   }
 
 
@@ -37,10 +22,7 @@ namespace Services
   {
    if (personUpdateRequest == null)
     throw new ArgumentNullException(nameof(personUpdateRequest));
-
-   //validation
-   ValidationHelper.ModelValidation(personUpdateRequest);
-
+   
    //get matching person object to update
    Person? matchingPerson = await _personsRepository.GetPersonByPersonID(personUpdateRequest.PersonID);
    if (matchingPerson == null)

@@ -1,5 +1,4 @@
 ﻿using ServiceContracts.DTO;
-using System.Threading.Tasks;
 
 namespace ServiceContracts
 {

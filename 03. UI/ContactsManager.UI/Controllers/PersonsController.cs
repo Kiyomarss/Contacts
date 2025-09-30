@@ -1,8 +1,6 @@
-﻿using CRUDExample.Filters;
-using CRUDExample.Filters.ActionFilters;
+﻿using CRUDExample.Filters.ActionFilters;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using Rotativa.AspNetCore;
 using ServiceContracts;
 using ServiceContracts.DTO;
 using ServiceContracts.Enums;

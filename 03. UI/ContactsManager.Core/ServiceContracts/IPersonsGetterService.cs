@@ -1,6 +1,4 @@
-﻿using System;
-using ServiceContracts.DTO;
-using ServiceContracts.Enums;
+﻿using ServiceContracts.DTO;
 
 namespace ServiceContracts
 {
@@ -29,19 +27,5 @@ namespace ServiceContracts
   /// <param name="searchString">Search string to search</param>
   /// <returns>Returns all matching persons based on the given search field and search string</returns>
   Task<List<PersonResponse>> GetFilteredPersons(string searchBy, string? searchString);
-
-
-  /// <summary>
-  /// Returns persons as CSV
-  /// </summary>
-  /// <returns>Returns the memory stream with CSV data of persons</returns>
-  Task<MemoryStream> GetPersonsCSV();
-
-
-  /// <summary>
-  /// Returns persons as Excel
-  /// </summary>
-  /// <returns>Returns the memory stream with Excel data of persons</returns>
-  Task<MemoryStream> GetPersonsExcel();
  }
 }

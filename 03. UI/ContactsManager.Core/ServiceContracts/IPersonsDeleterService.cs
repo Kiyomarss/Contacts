@@ -1,8 +1,4 @@
-﻿using System;
-using ServiceContracts.DTO;
-using ServiceContracts.Enums;
-
-namespace ServiceContracts
+﻿namespace ServiceContracts
 {
  /// <summary>
  /// Represents business logic (delete) for manipulating Perosn entity
