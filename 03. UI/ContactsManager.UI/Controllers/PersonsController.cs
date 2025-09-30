@@ -1,8 +1,5 @@
 ﻿using CRUDExample.Filters;
 using CRUDExample.Filters.ActionFilters;
-using CRUDExample.Filters.AuthorizationFilter;
-using CRUDExample.Filters.ExceptionFilters;
-using CRUDExample.Filters.ResourceFilters;
 using CRUDExample.Filters.ResultFilters;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -14,9 +11,6 @@ using ServiceContracts.Enums;
 namespace CRUDExample.Controllers
 {
  [Route("[controller]")]
-
- [ResponseHeaderFilterFactory("My-Key-From-Controller", "My-Value-From-Controller", 3)]
- //[TypeFilter(typeof(HandleExceptionFilter))]
  [TypeFilter(typeof(PersonAlwaysRunResultFilter))]
  public class PersonsController : Controller
  {
@@ -47,9 +41,6 @@ namespace CRUDExample.Controllers
   [Route("[action]")]
   [Route("/")]
   [ServiceFilter(typeof(PersonsListActionFilter), Order = 4)]
-
-  [ResponseHeaderFilterFactory("MyKey-FromAction", "MyValue-From-Action", 1)]
-
   [TypeFilter(typeof(PersonsListResultFilter))]
   [SkipFilter]
   public async Task<IActionResult> Index(string searchBy, string? searchString, string sortBy = nameof(PersonResponse.PersonName), SortOrderOptions sortOrder = SortOrderOptions.ASC)
@@ -73,7 +64,6 @@ namespace CRUDExample.Controllers
   //Url: persons/create
   [Route("[action]")]
   [HttpGet]
-  [ResponseHeaderFilterFactory("my-key", "my-value", 4)]
   public async Task<IActionResult> Create()
   {
    List<CountryResponse> countries = await _countriesGetterService.GetAllCountries();
@@ -91,7 +81,6 @@ namespace CRUDExample.Controllers
   //Url: persons/create
   [Route("[action]")]
   [TypeFilter(typeof(PersonCreateAndEditPostActionFilter))]
-  [TypeFilter(typeof(FeatureDisabledResourceFilter), Arguments = new object[] {  false })]
   public async Task<IActionResult> Create(PersonAddRequest personRequest)
   {
    //call the service method
@@ -126,7 +115,6 @@ namespace CRUDExample.Controllers
   [HttpPost]
   [Route("[action]/{personID}")]
   [TypeFilter(typeof(PersonCreateAndEditPostActionFilter))]
-  [TypeFilter(typeof(TokenAuthorizationFilter))]
   public async Task<IActionResult> Edit(PersonUpdateRequest personRequest)
   {
    PersonResponse? personResponse = await _personsGetterService.GetPersonByPersonID(personRequest.PersonID);
