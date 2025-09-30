@@ -1,6 +1,5 @@
 ﻿using CRUDExample.Filters;
 using CRUDExample.Filters.ActionFilters;
-using CRUDExample.Filters.ResultFilters;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Rotativa.AspNetCore;
@@ -11,7 +10,6 @@ using ServiceContracts.Enums;
 namespace CRUDExample.Controllers
 {
  [Route("[controller]")]
- [TypeFilter(typeof(PersonAlwaysRunResultFilter))]
  public class PersonsController : Controller
  {
   //private fields
@@ -41,8 +39,6 @@ namespace CRUDExample.Controllers
   [Route("[action]")]
   [Route("/")]
   [ServiceFilter(typeof(PersonsListActionFilter), Order = 4)]
-  [TypeFilter(typeof(PersonsListResultFilter))]
-  [SkipFilter]
   public async Task<IActionResult> Index(string searchBy, string? searchString, string sortBy = nameof(PersonResponse.PersonName), SortOrderOptions sortOrder = SortOrderOptions.ASC)
   {
    _logger.LogInformation("Index action method of PersonsController");
@@ -93,7 +89,6 @@ namespace CRUDExample.Controllers
 
   [HttpGet]
   [Route("[action]/{personID}")] //Eg: /persons/edit/1
-  [TypeFilter(typeof(TokenResultFilter))]
   public async Task<IActionResult> Edit(Guid personID)
   {
    PersonResponse? personResponse = await _personsGetterService.GetPersonByPersonID(personID);

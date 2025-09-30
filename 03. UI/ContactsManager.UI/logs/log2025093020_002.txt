@@ -1,3 +1,384 @@
 2025-09-30 20:03:07.570 +03:30 [INF] Application started. Press Ctrl+C to shut down.
 2025-09-30 20:03:07.580 +03:30 [INF] Hosting environment: Development
 2025-09-30 20:03:07.591 +03:30 [INF] Content root path: D:\Harsha\Contacts\03. UI\ContactsManager.UI\
+2025-09-30 20:47:59.425 +03:30 [INF] User profile is available. Using 'C:\Users\pasyar\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-09-30 20:47:59.806 +03:30 [INF] Now listening on: http://localhost:5153
+2025-09-30 20:47:59.813 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-30 20:47:59.814 +03:30 [INF] Hosting environment: Development
+2025-09-30 20:47:59.816 +03:30 [INF] Content root path: D:\Harsha\Contacts\03. UI\ContactsManager.UI\
+2025-09-30 20:48:01.247 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5153/ - -
+2025-09-30 20:48:01.266 +03:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /
+2025-09-30 20:48:01.313 +03:30 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Index (ContactsManager.UI)'
+2025-09-30 20:48:01.409 +03:30 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderOptions) on controller CRUDExample.Controllers.PersonsController (ContactsManager.UI).
+2025-09-30 20:48:01.770 +03:30 [INF] PersonsListActionFilter.OnActionExecuting method
+2025-09-30 20:48:01.780 +03:30 [INF] Executing action method CRUDExample.Controllers.PersonsController.Index (ContactsManager.UI) - Validation state: "Invalid"
+2025-09-30 20:48:01.789 +03:30 [INF] Index action method of PersonsController
+2025-09-30 20:48:01.799 +03:30 [INF] GetFilteredPersons of PersonsService
+2025-09-30 20:48:01.806 +03:30 [INF] GetAllPersons of PersonsRepository
+2025-09-30 20:48:03.146 +03:30 [INF] Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+2025-09-30 20:48:03.787 +03:30 [INF] Executed DbCommand (46ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2025-09-30 20:48:04.022 +03:30 [INF] Time for Filtered Persons from Database completed in 2218.7 ms
+2025-09-30 20:48:04.051 +03:30 [INF] GetSortedPersons of PersonsService
+2025-09-30 20:48:04.066 +03:30 [INF] Executed action method CRUDExample.Controllers.PersonsController.Index (ContactsManager.UI), returned result Microsoft.AspNetCore.Mvc.ViewResult in 2272.3408ms.
+2025-09-30 20:48:04.091 +03:30 [INF] PersonsListActionFilter.OnActionExecuted method
+2025-09-30 20:48:04.186 +03:30 [INF] Executing ViewResult, running view Index.
+2025-09-30 20:48:04.451 +03:30 [INF] Executed ViewResult - view Index executed in 268.2374ms.
+2025-09-30 20:48:04.459 +03:30 [INF] Executed action CRUDExample.Controllers.PersonsController.Index (ContactsManager.UI) in 3045.2536ms
+2025-09-30 20:48:04.475 +03:30 [INF] Executed endpoint 'CRUDExample.Controllers.PersonsController.Index (ContactsManager.UI)'
+2025-09-30 20:48:04.485 +03:30 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Tue, 30 Sep 2025 17:18:03 GMT
+Server: Kestrel
+Transfer-Encoding: chunked
+2025-09-30 20:48:04.492 +03:30 [INF] HTTP GET / responded 200 in 3230.5425 ms
+2025-09-30 20:48:04.517 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5153/ - - - 200 - text/html;+charset=utf-8 3274.5220ms
+2025-09-30 20:48:07.539 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5153/Persons/Create - -
+2025-09-30 20:48:07.541 +03:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Persons/Create
+2025-09-30 20:48:07.545 +03:30 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Create (ContactsManager.UI)'
+2025-09-30 20:48:07.556 +03:30 [INF] Route matched with {action = "Create", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create() on controller CRUDExample.Controllers.PersonsController (ContactsManager.UI).
+2025-09-30 20:48:07.567 +03:30 [INF] Executing action method CRUDExample.Controllers.PersonsController.Create (ContactsManager.UI) - Validation state: "Valid"
+2025-09-30 20:48:07.586 +03:30 [INF] Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+2025-09-30 20:48:07.603 +03:30 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CountryID], [c].[CountryName]
+FROM [Countries] AS [c]
+2025-09-30 20:48:07.616 +03:30 [INF] Executed action method CRUDExample.Controllers.PersonsController.Create (ContactsManager.UI), returned result Microsoft.AspNetCore.Mvc.ViewResult in 39.6139ms.
+2025-09-30 20:48:07.621 +03:30 [INF] Executing ViewResult, running view Create.
+2025-09-30 20:48:07.790 +03:30 [INF] Executed ViewResult - view Create executed in 171.5732ms.
+2025-09-30 20:48:07.793 +03:30 [INF] Executed action CRUDExample.Controllers.PersonsController.Create (ContactsManager.UI) in 234.9183ms
+2025-09-30 20:48:07.795 +03:30 [INF] Executed endpoint 'CRUDExample.Controllers.PersonsController.Create (ContactsManager.UI)'
+2025-09-30 20:48:07.798 +03:30 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Tue, 30 Sep 2025 17:18:07 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+Transfer-Encoding: chunked
+2025-09-30 20:48:07.801 +03:30 [INF] HTTP GET /Persons/Create responded 200 in 260.5923 ms
+2025-09-30 20:48:07.805 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5153/Persons/Create - - - 200 - text/html;+charset=utf-8 265.2691ms
+2025-09-30 20:48:28.252 +03:30 [INF] Request starting HTTP/1.1 POST http://localhost:5153/Persons/Create application/x-www-form-urlencoded 369
+2025-09-30 20:48:28.253 +03:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /Persons/Create
+2025-09-30 20:48:28.256 +03:30 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Create (ContactsManager.UI)'
+2025-09-30 20:48:28.271 +03:30 [INF] Route matched with {action = "Create", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(ServiceContracts.DTO.PersonAddRequest) on controller CRUDExample.Controllers.PersonsController (ContactsManager.UI).
+2025-09-30 20:48:28.327 +03:30 [INF] Executing action method CRUDExample.Controllers.PersonsController.Create (ContactsManager.UI) - Validation state: "Valid"
+2025-09-30 20:48:28.391 +03:30 [INF] Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+2025-09-30 20:48:28.740 +03:30 [INF] Executed DbCommand (87ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 200), @p2='?' (DbType = Guid), @p3='?' (DbType = DateTime2), @p4='?' (Size = 40), @p5='?' (Size = 10), @p6='?' (Size = 40), @p7='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Persons] ([PersonID], [Address], [CountryID], [DateOfBirth], [Email], [Gender], [PersonName], [ReceiveNewsLetters])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+SELECT [TaxIdentificationNumber]
+FROM [Persons]
+WHERE @@ROWCOUNT = 1 AND [PersonID] = @p0;
+2025-09-30 20:48:28.812 +03:30 [INF] Executed action method CRUDExample.Controllers.PersonsController.Create (ContactsManager.UI), returned result Microsoft.AspNetCore.Mvc.RedirectToActionResult in 480.9783ms.
+2025-09-30 20:48:28.816 +03:30 [INF] In after logic of PersonsCreateAndEdit Action filter
+2025-09-30 20:48:28.818 +03:30 [INF] Executing RedirectResult, redirecting to /Persons/Index.
+2025-09-30 20:48:28.820 +03:30 [INF] Executed action CRUDExample.Controllers.PersonsController.Create (ContactsManager.UI) in 546.7084ms
+2025-09-30 20:48:28.821 +03:30 [INF] Executed endpoint 'CRUDExample.Controllers.PersonsController.Create (ContactsManager.UI)'
+2025-09-30 20:48:28.823 +03:30 [INF] Response:
+StatusCode: 302
+Location: /Persons/Index
+2025-09-30 20:48:28.824 +03:30 [INF] HTTP POST /Persons/Create responded 302 in 570.7031 ms
+2025-09-30 20:48:28.826 +03:30 [INF] Request finished HTTP/1.1 POST http://localhost:5153/Persons/Create application/x-www-form-urlencoded 369 - 302 0 - 573.9496ms
+2025-09-30 20:48:28.835 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5153/Persons/Index - -
+2025-09-30 20:48:28.836 +03:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Persons/Index
+2025-09-30 20:48:28.837 +03:30 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Index (ContactsManager.UI)'
+2025-09-30 20:48:28.844 +03:30 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderOptions) on controller CRUDExample.Controllers.PersonsController (ContactsManager.UI).
+2025-09-30 20:48:28.847 +03:30 [INF] PersonsListActionFilter.OnActionExecuting method
+2025-09-30 20:48:28.849 +03:30 [INF] Executing action method CRUDExample.Controllers.PersonsController.Index (ContactsManager.UI) - Validation state: "Invalid"
+2025-09-30 20:48:28.850 +03:30 [INF] Index action method of PersonsController
+2025-09-30 20:48:28.851 +03:30 [INF] GetFilteredPersons of PersonsService
+2025-09-30 20:48:28.852 +03:30 [INF] GetAllPersons of PersonsRepository
+2025-09-30 20:48:28.854 +03:30 [INF] Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+2025-09-30 20:48:28.863 +03:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2025-09-30 20:48:28.869 +03:30 [INF] Time for Filtered Persons from Database completed in 16.9 ms
+2025-09-30 20:48:28.871 +03:30 [INF] GetSortedPersons of PersonsService
+2025-09-30 20:48:28.872 +03:30 [INF] Executed action method CRUDExample.Controllers.PersonsController.Index (ContactsManager.UI), returned result Microsoft.AspNetCore.Mvc.ViewResult in 21.5041ms.
+2025-09-30 20:48:28.874 +03:30 [INF] PersonsListActionFilter.OnActionExecuted method
+2025-09-30 20:48:28.875 +03:30 [INF] Executing ViewResult, running view Index.
+2025-09-30 20:48:28.877 +03:30 [INF] Executed ViewResult - view Index executed in 2.3071ms.
+2025-09-30 20:48:28.879 +03:30 [INF] Executed action CRUDExample.Controllers.PersonsController.Index (ContactsManager.UI) in 32.712ms
+2025-09-30 20:48:28.881 +03:30 [INF] Executed endpoint 'CRUDExample.Controllers.PersonsController.Index (ContactsManager.UI)'
+2025-09-30 20:48:28.883 +03:30 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Tue, 30 Sep 2025 17:18:28 GMT
+Server: Kestrel
+Transfer-Encoding: chunked
+2025-09-30 20:48:28.884 +03:30 [INF] HTTP GET /Persons/Index responded 200 in 48.0950 ms
+2025-09-30 20:48:28.889 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5153/Persons/Index - - - 200 - text/html;+charset=utf-8 54.2331ms
+2025-09-30 20:48:33.888 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5153/persons/index?searchBy=&searchString=&sortBy=Address&sortOrder=ASC - -
+2025-09-30 20:48:33.890 +03:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /persons/index
+2025-09-30 20:48:33.895 +03:30 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Index (ContactsManager.UI)'
+2025-09-30 20:48:33.900 +03:30 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderOptions) on controller CRUDExample.Controllers.PersonsController (ContactsManager.UI).
+2025-09-30 20:48:33.914 +03:30 [INF] PersonsListActionFilter.OnActionExecuting method
+2025-09-30 20:48:33.937 +03:30 [INF] Executing action method CRUDExample.Controllers.PersonsController.Index (ContactsManager.UI) - Validation state: "Invalid"
+2025-09-30 20:48:33.941 +03:30 [INF] Index action method of PersonsController
+2025-09-30 20:48:33.942 +03:30 [INF] GetFilteredPersons of PersonsService
+2025-09-30 20:48:33.943 +03:30 [INF] GetAllPersons of PersonsRepository
+2025-09-30 20:48:33.945 +03:30 [INF] Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+2025-09-30 20:48:33.961 +03:30 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2025-09-30 20:48:33.966 +03:30 [INF] Time for Filtered Persons from Database completed in 22.4 ms
+2025-09-30 20:48:33.968 +03:30 [INF] GetSortedPersons of PersonsService
+2025-09-30 20:48:33.969 +03:30 [INF] Executed action method CRUDExample.Controllers.PersonsController.Index (ContactsManager.UI), returned result Microsoft.AspNetCore.Mvc.ViewResult in 28.4272ms.
+2025-09-30 20:48:33.972 +03:30 [INF] PersonsListActionFilter.OnActionExecuted method
+2025-09-30 20:48:33.973 +03:30 [INF] Executing ViewResult, running view Index.
+2025-09-30 20:48:33.987 +03:30 [INF] Executed ViewResult - view Index executed in 13.6548ms.
+2025-09-30 20:48:33.989 +03:30 [INF] Executed action CRUDExample.Controllers.PersonsController.Index (ContactsManager.UI) in 86.3963ms
+2025-09-30 20:48:33.991 +03:30 [INF] Executed endpoint 'CRUDExample.Controllers.PersonsController.Index (ContactsManager.UI)'
+2025-09-30 20:48:33.993 +03:30 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Tue, 30 Sep 2025 17:18:33 GMT
+Server: Kestrel
+Transfer-Encoding: chunked
+2025-09-30 20:48:33.995 +03:30 [INF] HTTP GET /persons/index responded 200 in 105.1944 ms
+2025-09-30 20:48:33.998 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5153/persons/index?searchBy=&searchString=&sortBy=Address&sortOrder=ASC - - - 200 - text/html;+charset=utf-8 110.2679ms
+2025-09-30 20:48:36.187 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5153/Persons/Index - -
+2025-09-30 20:48:36.188 +03:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Persons/Index
+2025-09-30 20:48:36.189 +03:30 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Index (ContactsManager.UI)'
+2025-09-30 20:48:36.191 +03:30 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderOptions) on controller CRUDExample.Controllers.PersonsController (ContactsManager.UI).
+2025-09-30 20:48:36.194 +03:30 [INF] PersonsListActionFilter.OnActionExecuting method
+2025-09-30 20:48:36.195 +03:30 [INF] Executing action method CRUDExample.Controllers.PersonsController.Index (ContactsManager.UI) - Validation state: "Invalid"
+2025-09-30 20:48:36.197 +03:30 [INF] Index action method of PersonsController
+2025-09-30 20:48:36.198 +03:30 [INF] GetFilteredPersons of PersonsService
+2025-09-30 20:48:36.200 +03:30 [INF] GetAllPersons of PersonsRepository
+2025-09-30 20:48:36.201 +03:30 [INF] Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+2025-09-30 20:48:36.218 +03:30 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2025-09-30 20:48:36.221 +03:30 [INF] Time for Filtered Persons from Database completed in 21.3 ms
+2025-09-30 20:48:36.223 +03:30 [INF] GetSortedPersons of PersonsService
+2025-09-30 20:48:36.224 +03:30 [INF] Executed action method CRUDExample.Controllers.PersonsController.Index (ContactsManager.UI), returned result Microsoft.AspNetCore.Mvc.ViewResult in 27.0002ms.
+2025-09-30 20:48:36.226 +03:30 [INF] PersonsListActionFilter.OnActionExecuted method
+2025-09-30 20:48:36.227 +03:30 [INF] Executing ViewResult, running view Index.
+2025-09-30 20:48:36.232 +03:30 [INF] Executed ViewResult - view Index executed in 4.4093ms.
+2025-09-30 20:48:36.233 +03:30 [INF] Executed action CRUDExample.Controllers.PersonsController.Index (ContactsManager.UI) in 40.1671ms
+2025-09-30 20:48:36.236 +03:30 [INF] Executed endpoint 'CRUDExample.Controllers.PersonsController.Index (ContactsManager.UI)'
+2025-09-30 20:48:36.237 +03:30 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Tue, 30 Sep 2025 17:18:36 GMT
+Server: Kestrel
+Transfer-Encoding: chunked
+2025-09-30 20:48:36.241 +03:30 [INF] HTTP GET /Persons/Index responded 200 in 52.3065 ms
+2025-09-30 20:48:36.245 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5153/Persons/Index - - - 200 - text/html;+charset=utf-8 57.5725ms
+2025-09-30 20:48:39.232 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5153/Persons/Edit/e94f8024-c1f7-47a0-98a3-434175b752fd - -
+2025-09-30 20:48:39.236 +03:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Persons/Edit/e94f8024-c1f7-47a0-98a3-434175b752fd
+2025-09-30 20:48:39.240 +03:30 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Edit (ContactsManager.UI)'
+2025-09-30 20:48:39.250 +03:30 [INF] Route matched with {action = "Edit", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Edit(System.Guid) on controller CRUDExample.Controllers.PersonsController (ContactsManager.UI).
+2025-09-30 20:48:39.253 +03:30 [INF] Executing action method CRUDExample.Controllers.PersonsController.Edit (ContactsManager.UI) - Validation state: "Valid"
+2025-09-30 20:48:39.266 +03:30 [INF] Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+2025-09-30 20:48:39.426 +03:30 [INF] Executed DbCommand (54ms) [Parameters=[@__personID_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+WHERE [p].[PersonID] = @__personID_0
+2025-09-30 20:48:39.443 +03:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CountryID], [c].[CountryName]
+FROM [Countries] AS [c]
+2025-09-30 20:48:39.451 +03:30 [INF] Executed action method CRUDExample.Controllers.PersonsController.Edit (ContactsManager.UI), returned result Microsoft.AspNetCore.Mvc.ViewResult in 195.8807ms.
+2025-09-30 20:48:39.455 +03:30 [INF] Executing ViewResult, running view Edit.
+2025-09-30 20:48:39.583 +03:30 [INF] Executed ViewResult - view Edit executed in 129.9324ms.
+2025-09-30 20:48:39.585 +03:30 [INF] Executed action CRUDExample.Controllers.PersonsController.Edit (ContactsManager.UI) in 333.1968ms
+2025-09-30 20:48:39.587 +03:30 [INF] Executed endpoint 'CRUDExample.Controllers.PersonsController.Edit (ContactsManager.UI)'
+2025-09-30 20:48:39.589 +03:30 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Tue, 30 Sep 2025 17:18:39 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+Transfer-Encoding: chunked
+2025-09-30 20:48:39.591 +03:30 [INF] HTTP GET /Persons/Edit/e94f8024-c1f7-47a0-98a3-434175b752fd responded 200 in 354.5948 ms
+2025-09-30 20:48:39.594 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5153/Persons/Edit/e94f8024-c1f7-47a0-98a3-434175b752fd - - - 200 - text/html;+charset=utf-8 361.7356ms
+2025-09-30 20:48:47.178 +03:30 [INF] Request starting HTTP/1.1 POST http://localhost:5153/Persons/Edit/e94f8024-c1f7-47a0-98a3-434175b752fd application/x-www-form-urlencoded 415
+2025-09-30 20:48:47.182 +03:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /Persons/Edit/e94f8024-c1f7-47a0-98a3-434175b752fd
+2025-09-30 20:48:47.186 +03:30 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Edit (ContactsManager.UI)'
+2025-09-30 20:48:47.195 +03:30 [INF] Route matched with {action = "Edit", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Edit(ServiceContracts.DTO.PersonUpdateRequest) on controller CRUDExample.Controllers.PersonsController (ContactsManager.UI).
+2025-09-30 20:48:47.202 +03:30 [INF] Executing action method CRUDExample.Controllers.PersonsController.Edit (ContactsManager.UI) - Validation state: "Valid"
+2025-09-30 20:48:47.209 +03:30 [INF] Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+2025-09-30 20:48:47.244 +03:30 [INF] Executed DbCommand (27ms) [Parameters=[@__personID_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+WHERE [p].[PersonID] = @__personID_0
+2025-09-30 20:48:47.254 +03:30 [INF] Executed DbCommand (1ms) [Parameters=[@__personID_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+WHERE [p].[PersonID] = @__personID_0
+2025-09-30 20:48:47.271 +03:30 [INF] Executed DbCommand (4ms) [Parameters=[@__person_PersonID_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[TaxIdentificationNumber]
+FROM [Persons] AS [p]
+WHERE [p].[PersonID] = @__person_PersonID_0
+2025-09-30 20:48:47.308 +03:30 [INF] Executed DbCommand (16ms) [Parameters=[@p1='?' (DbType = Guid), @p0='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Persons] SET [DateOfBirth] = @p0
+WHERE [PersonID] = @p1;
+SELECT @@ROWCOUNT;
+2025-09-30 20:48:47.317 +03:30 [INF] Executed action method CRUDExample.Controllers.PersonsController.Edit (ContactsManager.UI), returned result Microsoft.AspNetCore.Mvc.RedirectToActionResult in 113.4223ms.
+2025-09-30 20:48:47.320 +03:30 [INF] In after logic of PersonsCreateAndEdit Action filter
+2025-09-30 20:48:47.322 +03:30 [INF] Executing RedirectResult, redirecting to /Persons/Index.
+2025-09-30 20:48:47.323 +03:30 [INF] Executed action CRUDExample.Controllers.PersonsController.Edit (ContactsManager.UI) in 125.2844ms
+2025-09-30 20:48:47.324 +03:30 [INF] Executed endpoint 'CRUDExample.Controllers.PersonsController.Edit (ContactsManager.UI)'
+2025-09-30 20:48:47.326 +03:30 [INF] Response:
+StatusCode: 302
+Location: /Persons/Index
+2025-09-30 20:48:47.327 +03:30 [INF] HTTP POST /Persons/Edit/e94f8024-c1f7-47a0-98a3-434175b752fd responded 302 in 144.5414 ms
+2025-09-30 20:48:47.331 +03:30 [INF] Request finished HTTP/1.1 POST http://localhost:5153/Persons/Edit/e94f8024-c1f7-47a0-98a3-434175b752fd application/x-www-form-urlencoded 415 - 302 0 - 152.4874ms
+2025-09-30 20:48:47.337 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5153/Persons/Index - -
+2025-09-30 20:48:47.338 +03:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Persons/Index
+2025-09-30 20:48:47.339 +03:30 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Index (ContactsManager.UI)'
+2025-09-30 20:48:47.340 +03:30 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderOptions) on controller CRUDExample.Controllers.PersonsController (ContactsManager.UI).
+2025-09-30 20:48:47.344 +03:30 [INF] PersonsListActionFilter.OnActionExecuting method
+2025-09-30 20:48:47.345 +03:30 [INF] Executing action method CRUDExample.Controllers.PersonsController.Index (ContactsManager.UI) - Validation state: "Invalid"
+2025-09-30 20:48:47.347 +03:30 [INF] Index action method of PersonsController
+2025-09-30 20:48:47.349 +03:30 [INF] GetFilteredPersons of PersonsService
+2025-09-30 20:48:47.350 +03:30 [INF] GetAllPersons of PersonsRepository
+2025-09-30 20:48:47.352 +03:30 [INF] Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+2025-09-30 20:48:47.360 +03:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2025-09-30 20:48:47.365 +03:30 [INF] Time for Filtered Persons from Database completed in 14.9 ms
+2025-09-30 20:48:47.367 +03:30 [INF] GetSortedPersons of PersonsService
+2025-09-30 20:48:47.369 +03:30 [INF] Executed action method CRUDExample.Controllers.PersonsController.Index (ContactsManager.UI), returned result Microsoft.AspNetCore.Mvc.ViewResult in 21.7399ms.
+2025-09-30 20:48:47.371 +03:30 [INF] PersonsListActionFilter.OnActionExecuted method
+2025-09-30 20:48:47.372 +03:30 [INF] Executing ViewResult, running view Index.
+2025-09-30 20:48:47.375 +03:30 [INF] Executed ViewResult - view Index executed in 3.2704ms.
+2025-09-30 20:48:47.377 +03:30 [INF] Executed action CRUDExample.Controllers.PersonsController.Index (ContactsManager.UI) in 34.3614ms
+2025-09-30 20:48:47.380 +03:30 [INF] Executed endpoint 'CRUDExample.Controllers.PersonsController.Index (ContactsManager.UI)'
+2025-09-30 20:48:47.382 +03:30 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Tue, 30 Sep 2025 17:18:47 GMT
+Server: Kestrel
+Transfer-Encoding: chunked
+2025-09-30 20:48:47.383 +03:30 [INF] HTTP GET /Persons/Index responded 200 in 44.9102 ms
+2025-09-30 20:48:47.386 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5153/Persons/Index - - - 200 - text/html;+charset=utf-8 48.9752ms
+2025-09-30 20:48:53.388 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5153/Persons/Index - -
+2025-09-30 20:48:53.389 +03:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Persons/Index
+2025-09-30 20:48:53.390 +03:30 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Index (ContactsManager.UI)'
+2025-09-30 20:48:53.393 +03:30 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderOptions) on controller CRUDExample.Controllers.PersonsController (ContactsManager.UI).
+2025-09-30 20:48:53.399 +03:30 [INF] PersonsListActionFilter.OnActionExecuting method
+2025-09-30 20:48:53.401 +03:30 [INF] Executing action method CRUDExample.Controllers.PersonsController.Index (ContactsManager.UI) - Validation state: "Invalid"
+2025-09-30 20:48:53.403 +03:30 [INF] Index action method of PersonsController
+2025-09-30 20:48:53.405 +03:30 [INF] GetFilteredPersons of PersonsService
+2025-09-30 20:48:53.410 +03:30 [INF] GetAllPersons of PersonsRepository
+2025-09-30 20:48:53.416 +03:30 [INF] Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+2025-09-30 20:48:53.437 +03:30 [INF] Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2025-09-30 20:48:53.441 +03:30 [INF] Time for Filtered Persons from Database completed in 30.7 ms
+2025-09-30 20:48:53.443 +03:30 [INF] GetSortedPersons of PersonsService
+2025-09-30 20:48:53.444 +03:30 [INF] Executed action method CRUDExample.Controllers.PersonsController.Index (ContactsManager.UI), returned result Microsoft.AspNetCore.Mvc.ViewResult in 40.6657ms.
+2025-09-30 20:48:53.447 +03:30 [INF] PersonsListActionFilter.OnActionExecuted method
+2025-09-30 20:48:53.449 +03:30 [INF] Executing ViewResult, running view Index.
+2025-09-30 20:48:53.454 +03:30 [INF] Executed ViewResult - view Index executed in 4.9084ms.
+2025-09-30 20:48:53.457 +03:30 [INF] Executed action CRUDExample.Controllers.PersonsController.Index (ContactsManager.UI) in 58.3988ms
+2025-09-30 20:48:53.459 +03:30 [INF] Executed endpoint 'CRUDExample.Controllers.PersonsController.Index (ContactsManager.UI)'
+2025-09-30 20:48:53.461 +03:30 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Tue, 30 Sep 2025 17:18:53 GMT
+Server: Kestrel
+Transfer-Encoding: chunked
+2025-09-30 20:48:53.464 +03:30 [INF] HTTP GET /Persons/Index responded 200 in 75.0962 ms
+2025-09-30 20:48:53.467 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5153/Persons/Index - - - 200 - text/html;+charset=utf-8 79.8669ms
+2025-09-30 20:49:04.469 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5153/Persons/Index - -
+2025-09-30 20:49:04.470 +03:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Persons/Index
+2025-09-30 20:49:04.471 +03:30 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Index (ContactsManager.UI)'
+2025-09-30 20:49:04.473 +03:30 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderOptions) on controller CRUDExample.Controllers.PersonsController (ContactsManager.UI).
+2025-09-30 20:49:04.478 +03:30 [INF] PersonsListActionFilter.OnActionExecuting method
+2025-09-30 20:49:04.479 +03:30 [INF] Executing action method CRUDExample.Controllers.PersonsController.Index (ContactsManager.UI) - Validation state: "Invalid"
+2025-09-30 20:49:04.486 +03:30 [INF] Index action method of PersonsController
+2025-09-30 20:49:04.487 +03:30 [INF] GetFilteredPersons of PersonsService
+2025-09-30 20:49:04.488 +03:30 [INF] GetAllPersons of PersonsRepository
+2025-09-30 20:49:04.492 +03:30 [INF] Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+2025-09-30 20:49:04.553 +03:30 [INF] Executed DbCommand (58ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2025-09-30 20:49:04.556 +03:30 [INF] Time for Filtered Persons from Database completed in 68.1 ms
+2025-09-30 20:49:04.558 +03:30 [INF] GetSortedPersons of PersonsService
+2025-09-30 20:49:04.559 +03:30 [INF] Executed action method CRUDExample.Controllers.PersonsController.Index (ContactsManager.UI), returned result Microsoft.AspNetCore.Mvc.ViewResult in 73.1191ms.
+2025-09-30 20:49:04.561 +03:30 [INF] PersonsListActionFilter.OnActionExecuted method
+2025-09-30 20:49:04.563 +03:30 [INF] Executing ViewResult, running view Index.
+2025-09-30 20:49:04.567 +03:30 [INF] Executed ViewResult - view Index executed in 4.4482ms.
+2025-09-30 20:49:04.570 +03:30 [INF] Executed action CRUDExample.Controllers.PersonsController.Index (ContactsManager.UI) in 92.5604ms
+2025-09-30 20:49:04.571 +03:30 [INF] Executed endpoint 'CRUDExample.Controllers.PersonsController.Index (ContactsManager.UI)'
+2025-09-30 20:49:04.573 +03:30 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Tue, 30 Sep 2025 17:19:04 GMT
+Server: Kestrel
+Transfer-Encoding: chunked
+2025-09-30 20:49:04.575 +03:30 [INF] HTTP GET /Persons/Index responded 200 in 104.0596 ms
+2025-09-30 20:49:04.578 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5153/Persons/Index - - - 200 - text/html;+charset=utf-8 108.8014ms
