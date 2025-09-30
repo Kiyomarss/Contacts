@@ -49,3 +49,4 @@ D:\Harsha\Contacts\03. UI\ContactsManager.Infrastructure\obj\Debug\net6.0\refint
 D:\Harsha\Contacts\03. UI\ContactsManager.Infrastructure\obj\Debug\net6.0\ContactsManager.Infrastructure.pdb
 D:\Harsha\Contacts\03. UI\ContactsManager.Infrastructure\obj\Debug\net6.0\ContactsManager.Infrastructure.genruntimeconfig.cache
 D:\Harsha\Contacts\03. UI\ContactsManager.Infrastructure\obj\Debug\net6.0\ref\ContactsManager.Infrastructure.dll
+D:\Harsha\Contacts\03. UI\ContactsManager.Infrastructure\obj\Debug\net6.0\ContactsManager.Infrastructure.sourcelink.json

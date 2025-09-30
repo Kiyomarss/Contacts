@@ -34,3 +34,4 @@ D:\Harsha\Contacts\03. UI\ContactsManager.Core\obj\Debug\net6.0\ContactsManager.
 D:\Harsha\Contacts\03. UI\ContactsManager.Core\obj\Debug\net6.0\refint\ContactsManager.Core.dll
 D:\Harsha\Contacts\03. UI\ContactsManager.Core\obj\Debug\net6.0\ContactsManager.Core.pdb
 D:\Harsha\Contacts\03. UI\ContactsManager.Core\obj\Debug\net6.0\ref\ContactsManager.Core.dll
+D:\Harsha\Contacts\03. UI\ContactsManager.Core\obj\Debug\net6.0\ContactsManager.Core.sourcelink.json

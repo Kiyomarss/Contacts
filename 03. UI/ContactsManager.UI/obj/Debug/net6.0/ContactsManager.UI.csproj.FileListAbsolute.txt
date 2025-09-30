@@ -352,3 +352,4 @@ D:\Harsha\Contacts\03. UI\ContactsManager.UI\obj\Debug\net6.0\refint\ContactsMan
 D:\Harsha\Contacts\03. UI\ContactsManager.UI\obj\Debug\net6.0\ContactsManager.UI.pdb
 D:\Harsha\Contacts\03. UI\ContactsManager.UI\obj\Debug\net6.0\ContactsManager.UI.genruntimeconfig.cache
 D:\Harsha\Contacts\03. UI\ContactsManager.UI\obj\Debug\net6.0\ref\ContactsManager.UI.dll
+D:\Harsha\Contacts\03. UI\ContactsManager.UI\obj\Debug\net6.0\ContactsManager.UI.sourcelink.json
